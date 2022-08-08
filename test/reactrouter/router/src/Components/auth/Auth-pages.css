@@ -1,0 +1,33 @@
+.form label,
+.form input{
+    display: block;
+}
+.form input{
+    margin-bottom: 1rem;
+}
+.form label{
+    margin-bottom: 0.2rem;
+}
+
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password']{
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    background-color: #dfdfdf;
+}
+.form input:focus{
+   outline:none;
+    border: 1px solid #FF6347;
+    box-shadow: inset 0px 0px 5px rgba(38,142,228,0.5);
+}
+.form input[type='submit']{
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #FF6347;
+    border-radius: 8px;
+    background-color: #FA8072;
+    font-size: 1.1rem;
+}

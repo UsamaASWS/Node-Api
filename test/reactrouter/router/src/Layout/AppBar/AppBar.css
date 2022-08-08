@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.appbar{
+    position: fixed;
+    top:0;
+    left:0 ;
+    width: 100%;
+    background: #521751;
+    height: 56px;
+    z-index: 90;
+
+}
+.appbar_navigation{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+}
+.appbar_logo{
+    margin-left: 1rem;
+}
+.appbar_logo a{
+    color: white;
+    text-decoration:none;
+    font-size: 1.5rem;
+}
+.spacer{
+    flex:1;
+}
+.appbar_navigation-items ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.appbar_navigation-items li{
+    padding: 0 0.5rem;
+}
+.appbar_navigation-items a{
+    color : white;
+    text-decoration: none;
+
+}
+.appbar_navigation-items a:hover,
+.appbar_navigation-items a:active{
+    color: #fa923f;
+}
+
+@media(max-width: 768px){
+    .appbar_navigation-items{
+        display: none;
+    }
+}
+@media screen and (max-width:769px){
+    .header .title{
+        font-size: 1.2rem;
+    }
+    .header .authOptions button{
+        padding: 0 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+h1,h2,h3,h4,h5,h6,p ul,ol{
+    margin: 1em 0;
+  }
+  
+  .header{
+    background-color: #521751;
+    justify-content: space-between;
+    display: flex;
+     }
+  
+  .header .title {
+    margin: 0;
+    color: #ffffff;
+    padding: 0 1rem;
+  }
+
+.header .authOptions button{
+   background-color:#3f113e;
+   padding: 0 1rem;
+   font-weight: bold;
+   color: #ffffff;
+}
+
+.header .authOptions button:hover{
+    background-color:#fa923f;
+}

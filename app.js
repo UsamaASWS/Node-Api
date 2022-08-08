@@ -7,7 +7,7 @@ const mongoose =require('mongoose');
 const orderRoutes= require('./api/routes/orders');
 const productRoutes= require('./api/routes/porducts');
 const userRoutes=require('./api/routes/user');
-
+const blogRoutes= require('./api/routes/Blogs')
 mongoose.connect('mongodb+srv://usamaaslam:usama@1234@cluster0-8mayt.mongodb.net/Test>?retryWrites=true&w=majority', { useNewUrlParser: true,useUnifiedTopology: true }); 
 mongoose.Promise=global.Promise;
 app.use(morgan('dev'));
@@ -28,6 +28,7 @@ app.use((req,res,next)=>{
 app.use('/products',productRoutes);
 app.use('/orders',orderRoutes);
 app.use("/user",userRoutes);
+app.use("/blogs",blogRoutes);
 app.use((req,res,next)=>{
     const error = new Error('Not Found');
     error.status=404;
